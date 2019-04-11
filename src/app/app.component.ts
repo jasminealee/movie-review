@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ReviewSpecificMovieComponent } from './review-specific-movie/review-specific-movie.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+// import { MovieListComponent } from './movie-list/movie-list.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Movie Review';
 }

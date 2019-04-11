@@ -1,0 +1,20 @@
+<label for="search">Search</label>
+<input id="search" type="text" name="" value="">
+<button type="button" name="button">button</button>
+<br>
+<br>
+<label for="title">Movie Title</label>
+<input #title>
+<br>
+<label for="thoughts">Review:</label>
+<input #thoughts>
+<br>
+<label for="name">Name:</label>
+<input #name>
+
+<button class="btn btn-outline-info btn-md" (click)="addReview(title.value, thoughts.value)">Submit Review</button>
+<br>
+<h2>Reviews</h2>
+<div *ngFor="let review of reviews">
+    <h3><em>{{review.title}}</em> {{review.thoughts}} <br> - {{review.name}}</h3>
+</div>

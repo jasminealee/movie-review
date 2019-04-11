@@ -1,0 +1,6 @@
+<h2>Reviews</h2>
+
+<div *ngFor="let review of reviews" (click)="goToDetailPage(review)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{review.title}}</em></h3>
+</div>
