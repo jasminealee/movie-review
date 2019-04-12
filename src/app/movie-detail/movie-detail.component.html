@@ -1,7 +1,7 @@
 <h2>Movies</h2>
-
+<h2>This movie has id number: {{movieId}}</h2>
 <div *ngFor="let movie of movies" (click)="goToDetailPage(movie)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{movie.review}} {{movie.id}}</em></h3>
   </div>
-</div>  
+</div>
