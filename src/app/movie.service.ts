@@ -8,6 +8,6 @@ export class MovieService {
   constructor() { }
   getMovies() {
   return MOVIES;
-}
+  }
 
 }
