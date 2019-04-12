@@ -3,16 +3,16 @@
 <button type="button" name="button">button</button>
 <br>
 <br>
-<label for="newTitle">Movie Title</label>
-<input #newTitle>
+<label for="title">Movie Title</label>
+<input #title>
 <br>
-<label for="newThoughts">Review:</label>
-<input #newThoughts>
+<label for="thoughts">Review:</label>
+<input #thoughts>
 <br>
-<label for="newName">Name:</label>
-<textarea #newName></textarea>
-   <button (click)="submitForm(new.Title.value, newThoughts.value; newName.value
-   ); newTitle.value=''; newThoughts.value=''; newName.value=''">AddReview</button>
+<label for="name">Name:</label>
+<input #name>
+
+<button class="btn btn-outline-info btn-md" (click)="addReview(title.value, thoughts.value)">Submit Review</button>
 <br>
 <h2>Reviews</h2>
 <div *ngFor="let review of reviews">
