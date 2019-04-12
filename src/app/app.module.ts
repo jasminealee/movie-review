@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http';
 import { ReviewSpecificMovieComponent } from './review-specific-movie/review-specific-movie.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+// import { StarComponent } from './star/star.component';
 
 
 
@@ -17,7 +18,8 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     WelcomeComponent,
     ReviewSpecificMovieComponent,
     MovieListComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    // StarComponent
   ],
   imports: [
     BrowserModule,

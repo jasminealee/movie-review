@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { ReviewSpecificMovieComponent } from './review-specific-movie/review-specific-movie.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-// import { MovieListComponent } from './movie-list/movie-list.component';
+import { MovieListComponent } from './movie-list/movie-list.component';
+import { StarComponent } from './star/star.component';
 
 @Component({
   selector: 'app-root',
