@@ -15,6 +15,10 @@
 <button class="btn btn-outline-info btn-md" (click)="addReview(title.value, thoughts.value)">Submit Review</button>
 <br>
 <h2>Reviews</h2>
-<div *ngFor="let review of reviews">
+<div *ngFor="let review of reviews" (click)="goToDetailPage(review)" class="panel panel-default">
     <h3><em>{{review.title}}</em> {{review.thoughts}} <br> - {{review.name}}</h3>
+</div>
+<div *ngFor="let review of reviews" (click)="goToDetailPage(movie)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{review.title}}</em></h3>
 </div>

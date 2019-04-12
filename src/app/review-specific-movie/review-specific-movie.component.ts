@@ -14,6 +14,7 @@ export class ReviewSpecificMovieComponent {
   reviews: Review[] = [
     new Review("Endgame", "The best movie ever!", "John", 1)
   ];
+
   goToDetailPage(clickedReview: Review) {
     this.router.navigate(['reviews', clickedReview.id]);
 
