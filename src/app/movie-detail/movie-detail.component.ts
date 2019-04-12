@@ -18,9 +18,6 @@ export class MovieDetailComponent implements OnInit {
     this.movieId = parseInt(urlParameters['id']);
     });
   }
-  movies: Movie[] = [
-    new Movie(["The best movie ever!"], 1)
-  ];
   // goToDetailPage(clickedMovie: Movie) {
   //   this.route.navigate(['movies', clickedMovie.id]);
   // };
