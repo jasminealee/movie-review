@@ -3,11 +3,11 @@ import { Movie } from '../movie.model';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
+
 @Component({
   selector: 'app-movie-detail',
   templateUrl: './movie-detail.component.html',
   styleUrls: ['./movie-detail.component.css'],
-  providers: [MoviService]
 })
 export class MovieDetailComponent implements OnInit {
   movieId: number = null;
@@ -19,6 +19,10 @@ export class MovieDetailComponent implements OnInit {
     this.movieId = parseInt(urlParameters['id']);
     });
   }
+
+  movies: Movie[] = [
+    new Movie(["The best movie ever!"], 1)
+  ];
   // goToDetailPage(clickedMovie: Movie) {
   //   this.route.navigate(['movies', clickedMovie.id]);
   // };
