@@ -10,9 +10,13 @@ import { Location } from '@angular/common';
 })
 export class MovieDetailComponent implements OnInit {
   movieId: number = null;
+
   constructor(private route: ActivatedRoute, private location: Location) {}
 
   ngOnInit() {
+  this.route.params.forEach((urlParameters) => {
+    this.movieId = parseInt(urlParameters['id']);
+    });
   }
   movies: Movie[] = [
     new Movie(["The best movie ever!"], 1)
