@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Review } from '../review.model';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';}
 
 @Component({
   selector: 'app-review-specific-movie',
@@ -15,8 +16,8 @@ export class ReviewSpecificMovieComponent {
     new Review("Endgame", "The best movie ever!", "John", 1)
   ];
 
-  goToDetailPage(clickedReview: Review) {
-    this.router.navigate(['reviews', clickedReview.id]);
+  // goToDetailPage(clickedReview: Review) {
+  //   this.router.navigate(['reviews', clickedReview.id]);
 
 }
 }
