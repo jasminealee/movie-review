@@ -10,11 +10,14 @@ import { Location } from '@angular/common';}
 })
 
 export class ReviewSpecificMovieComponent {
-  constructor(private router: Router){}
+  constructor(private router: ActivatedRoute, private location: Location){}
+  movieId: number = null;
 
-  reviews: Review[] = [
-    new Review("Endgame", "The best movie ever!", "John", 1)
-  ];
+   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.movieId = parseInt(urlParameters['id']);
+    });
+  }
 
   // goToDetailPage(clickedReview: Review) {
   //   this.router.navigate(['reviews', clickedReview.id]);
